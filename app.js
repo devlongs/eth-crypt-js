@@ -9,4 +9,5 @@ function findColor(hash) {
     return COLORS.find(x => toHex(sha256(utf8ToBytes(x))) === toHex(hash));
 }
 
+// console.log(toHex(sha256(utf8ToBytes('red'))))
 console.log(findColor("b1f51a511f1da0cd348b8f8598db32e61cb963e5fc69e2b41485bf99590ed75a"))
